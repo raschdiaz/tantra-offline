@@ -95,99 +95,99 @@ goto INVALID_INPUT
 :ZONE_1
 cls
 start ZONES/Zone1/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_2
 cls
 start ZONES/Zone2/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_3
 cls
 start ZONES/Zone3/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_4
 cls
 start ZONES/Zone4/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_5
 cls
 start ZONES/Zone5/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_6
 cls
 start ZONES/Zone6/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_7
 cls
 start ZONES/Zone7/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_8
 cls
 start ZONES/Zone8/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_9
 cls
 start ZONES/Zone9/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_10
 cls
 start ZONES/Zone10/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_11
 cls
 start ZONES/Zone11/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_12
 cls
 start ZONES/Zone12/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_13
 cls
 start ZONES/Zone13/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_14
 cls
 start ZONES/Zone14/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_15
 cls
 start ZONES/Zone15/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_16
 cls
 start ZONES/Zone16/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_17
 cls
 start ZONES/Zone17/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_20
 cls
 start ZONES/Zone20/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_21
 cls
 start ZONES/Zone21/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_22
 cls
 start ZONES/Zone22/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :ZONE_23
 cls
 start ZONES/Zone23/ZONESRV.exe
-goto start
+goto OPEN_SERVER
 :DBSRV
 cls
 start DBSRV/DBSRV.exe
-goto start
+goto OPEN_SERVER
 :MSGSRV
 cls
 start MSGSRV/MSGSRV.exe
-goto start
+goto OPEN_SERVER
 :CHATSRV
 cls
 start CHATSRV/CHATSRV.exe
-goto start
+goto OPEN_SERVER
 
 
 
@@ -296,7 +296,7 @@ echo    .                                        .
 echo    ..........................................
 echo.
 pause
-goto OPEN_SERVER
+goto PRINCIPAL_MENU
 
 
 
