@@ -1,332 +1,335 @@
-@ECHO off
-:menu
+@echo off
+
+
+
+:: MENU SCREEN
+:PRINCIPAL_MENU
 cls
-title Free Resources Network - tantra Tools - http://sami3744.blogspot.com
+title Tantra Tools - Hans Smuller Rasch Diaz
 echo.&echo.
-echo                                 tantra Tools
-echo                                 Member Tools
-echo                                 SamTheGreaT
+echo            Tantra Tools
 echo.&echo.
-echo   ........................................................................
-echo   .      G = Open Server             P = Configurar IP                   .     
-echo   .      M = Open Clan Rank          I = Zone Info                       .
-echo   .                                              X = Close All servers   .
-echo   ........................................................................
-echo   ========================================================================
-echo   =                                                                      =
-echo   =                                                                      =
-echo   =      Copy the tool to C:/Server                                      =
-echo   =                                                                      =
-echo   =                                        Version 2.0  12/16/2011       =
-echo   ========================================================================
-ECHO.
-ECHO.
-set /p l=           Please enter:
-if %l%==* goto error
-if %l%==m goto Guild
-if %l%==M goto Guild
-if %l%==g goto start
-if %l%==G goto start
-if %l%==p goto set
-if %l%==P goto set
-if %l%==i goto zonesm
-if %l%==I goto zonesm
-if %l%==x goto exitexe
-if %l%==X goto exitexe
-goto error
-:error
-CLS
-ECHO.
-ECHO [error] Input error code
-ECHO [error] Please fill
-PAUSE    
-GOTO menu
-:Guild
+echo   ..............................
+echo   .                            .  
+echo   .  A = Open Server           .  
+echo   .  B = Set IP                .
+::echo   .  C = Open Clan Rank        .
+echo   .  D = Zone Info             .
+echo   .  E = Close All servers     .
+echo   .                            . 
+echo   ..............................
+echo.&echo.
+echo   ==============================
+echo   =   Last Edit:  09/12/2021   =
+echo   ==============================
+echo.
+echo.
+set /p l=           Please enter: 
+if %l%==* goto INVALID_INPUT
+if %l%==A goto OPEN_SERVER
+if %l%==B goto SET_IP_MENU
+::if %l%==C goto GUILD_MENU
+if %l%==D goto ZONE_INFO_MENU
+if %l%==E goto CLOSE_SERVER_MENU
+
+
+
+:: INVALID_INPUT SCREEN
+goto INVALID_INPUT
+:INVALID_INPUT
 cls
-title tantra Tools - open Guild - http://sami3744.blogspot.com
-echo.&echo.
-echo                                 tantra Tools
-echo                                  open Guild
-echo                                  SamTheGreaT
-echo.&echo.
-echo   ........................................................................
-echo   .             Y = Open Clan and Rank      N = Close Clan and Rank      .
-ECHO   .                                                                      .
-ECHO   .                                                                      .
-echo   .                           F = Return to Menu                            .
-echo   ........................................................................
-ECHO.
-ECHO.
-set /p l=           Please enter:
-if %l%==* goto error
-if %l%==y goto YesGuild
-if %l%==Y goto YesGuild
-if %l%==n goto NoGuild
-if %l%==N goto NoGuild
-if %l%==f goto menu
-if %l%==F goto menu
-goto error
-:YesGuild
-CLS
-subst G: C:\TantraServer\DBSRV\guild
-subst K: C:\TantraServer\SQLDAEMON\Rank
-subst R: C:\TantraServer\web
-subst Q: C:\TantraServer\web
-subst S: C:\TantraServer\web
-subst H: C:\TantraServer\web
-echo                           Start Guild and Rank Success
-PAUSE    
-GOTO Guild
-:NoGuild
-CLS
-subst G: /d
-subst K: /d
-subst R: /d
-subst Q: /d
-subst S: /d
-subst H: /d
-echo                           Close Guild and Rank Success 
-PAUSE    
-GOTO Guild
-:start
+echo.
+echo [ERROR] Invalid input, please write any accepted letter.
+pause    
+goto PRINCIPAL_MENU
+
+
+
+:: OPEN_SERVER SCREEN
+:OPEN_SERVER
 cls
-title tantra Tools - Start Tantra Server - http://sami3744.blogspot.com
 echo.&echo.
-echo                                tantra Tools
-echo                             Start Tantra Server
-echo                                 SamTheGreat
+echo                                     Open Server                               
 echo.&echo.
-echo ...............................................................................
-echo .    A = Start Zone1  B = Start Zone2  C = Start Zone3   D = Start Zone4      .
-echo .    E = Start Zone5  J = Start Zone10 O = Start Zone15  T = Start Zone22     .
-echo .    F = Start Zone6  G = Start Zone7  H = Start Zone8   I = Start Zone9      .
-echo .    K = Start Zone11 L = Start Zone12 M = Start Zone13  N = Start Zone14     .
-echo .    P = Start Zone16 Q = Start Zone17 R = Start Zone20  S = Start Zone21     .
-echo .    W = Start DBSRV  X = Start MSGSRV Y = Start chatsrv V = Start Zone23     .
-echo .                                                                             .
-echo .                1 = Show Zone Info               2 = Return to Menu          .
-echo ...............................................................................
-ECHO.
-ECHO                       Please enter lowercase letters
-ECHO.
-ECHO.
-set /p l=           Please enter:
-if %l%==* goto error
-if %l%==a goto zone1
-if %l%==b goto zone2
-if %l%==c goto zone3
-if %l%==d goto zone4
-if %l%==e goto zone5
-if %l%==f goto zone6
-if %l%==g goto zone7
-if %l%==h goto zone8
-if %l%==i goto zone9
-if %l%==j goto zone10
-if %l%==k goto zone11
-if %l%==l goto zone12
-if %l%==m goto zone13
-if %l%==n goto zone14
-if %l%==o goto zone15
-if %l%==p goto zone16
-if %l%==q goto zone17
-if %l%==r goto zone20
-if %l%==s goto zone21
-if %l%==t goto zone22
-if %l%==v goto zone23
-if %l%==w goto dbsrv
-if %l%==x goto msgsrv
-if %l%==y goto chatsrv
-if %l%==1 goto zonesm
-if %l%==2 goto menu
-goto error
-:zonesm
+echo    ....................................................................................
+echo    .                                                                                  .
+echo    .  A = Start Zone1     B = Start Zone2     C = Start Zone3     D = Start Zone4     .
+echo    .  E = Start Zone5     F = Start Zone6     G = Start Zone7     H = Start Zone8     .
+echo    .  I = Start Zone9     J = Start Zone10    K = Start Zone11    L = Start Zone12    .    
+echo    .  M = Start Zone13    N = Start Zone14    O = Start Zone15    P = Start Zone16    .
+echo    .  Q = Start Zone17    R = Start Zone20    S = Start Zone21    T = Start Zone22    .
+echo    .  U = Start Zone23    V = Start DBSRV     W = Start MSGSRV    X = Start CHATSRV   .
+echo    .  Y = Return to Menu                                                              .
+echo    .                                                                                  .
+echo    ....................................................................................
+echo.
+echo.
+set /p l=           Please enter: 
+if %l%==* goto INVALID_INPUT
+if %l%==A goto ZONE_1
+if %l%==B goto ZONE_2
+if %l%==C goto ZONE_3
+if %l%==D goto ZONE_4
+if %l%==E goto ZONE_5
+if %l%==F goto ZONE_6
+if %l%==G goto ZONE_7
+if %l%==H goto ZONE_8
+if %l%==I goto ZONE_9
+if %l%==J goto ZONE_10
+if %l%==K goto ZONE_11
+if %l%==L goto ZONE_12
+if %l%==M goto ZONE_13
+if %l%==N goto ZONE_14
+if %l%==O goto ZONE_15
+if %l%==P goto ZONE_16
+if %l%==Q goto ZONE_17
+if %l%==R goto ZONE_20
+if %l%==S goto ZONE_21
+if %l%==T goto ZONE_22
+if %l%==U goto ZONE_23
+if %l%==V goto DBSRV
+if %l%==W goto MSGSRV
+if %l%==X goto CHATSRV
+if %l%==Y goto PRINCIPAL_MENU
+goto INVALID_INPUT
+:ZONE_1
 cls
-title tantra Tools - Zone Info - http://sami3744.blogspot.com
-echo.&echo.
-echo                                 tantra Tools
-echo                                   Zone Info 
-echo                                  SamTheGreat
-echo.&echo.
-echo ............................................................................
-echo .  1 = Mandara                                                             .
-echo .  2 = Shambala                                                            .
-echo .  3 = Horseman Dungeon 1st                                                .
-echo .  4 = Horseman Dungeon 2nd                                                .
-echo .  5 = Shambala Dungeon1st                                                 .
-echo .  6 = Shambala Dungeon2nd                                                 .
-echo .  7 = Jina Village                                                        .
-echo .  8 = Pamir Plains                                                        .
-echo .  9 = Village of the outcast(Exilio)                                      .
-echo .  10 = Kruma                                                              .
-echo .  11 = Chaturanga                                                         .
-echo .  12 = Entrance Hall of Emperor's Tomb                                    .
-echo .  13 = Karya Low Level                                                    .
-echo .  14 = Karya Middle Level                                                 .
-echo .  15 = Karya High Level                                                   .
-echo .  16 = Nar Durga Gate                                                     .
-echo .  17 = Biryu                                                              .
-echo .  20 = Anaka Kruma                                                        .
-echo .  21 = Mudha                                                              .
-echo .  22 = Forge                                                              .
-echo .                                                                          .
-echo ............................................................................
-ECHO.
-ECHO                                 ע�� ��1 = Zone1 
-PAUSE
-goto start
-:zone1
-CLS
 start ZONES/Zone1/ZONESRV.exe
-GOTO start
-:zone2
-CLS
+goto start
+:ZONE_2
+cls
 start ZONES/Zone2/ZONESRV.exe
-GOTO start
-:zone3
-CLS
+goto start
+:ZONE_3
+cls
 start ZONES/Zone3/ZONESRV.exe
-GOTO start
-:zone4
-CLS
+goto start
+:ZONE_4
+cls
 start ZONES/Zone4/ZONESRV.exe
-GOTO start
-:zone5
-CLS
+goto start
+:ZONE_5
+cls
 start ZONES/Zone5/ZONESRV.exe
-GOTO start
-:zone6
-CLS
+goto start
+:ZONE_6
+cls
 start ZONES/Zone6/ZONESRV.exe
-GOTO start
-:zone7
-CLS
+goto start
+:ZONE_7
+cls
 start ZONES/Zone7/ZONESRV.exe
-GOTO start
-:zone8
-CLS
+goto start
+:ZONE_8
+cls
 start ZONES/Zone8/ZONESRV.exe
-GOTO start
-:zone9
-CLS
+goto start
+:ZONE_9
+cls
 start ZONES/Zone9/ZONESRV.exe
-GOTO start
-:zone10
-CLS
+goto start
+:ZONE_10
+cls
 start ZONES/Zone10/ZONESRV.exe
-GOTO start
-:zone11
-CLS
+goto start
+:ZONE_11
+cls
 start ZONES/Zone11/ZONESRV.exe
-GOTO start
-:zone12
-CLS
+goto start
+:ZONE_12
+cls
 start ZONES/Zone12/ZONESRV.exe
-GOTO start
-:zone13
-CLS
+goto start
+:ZONE_13
+cls
 start ZONES/Zone13/ZONESRV.exe
-GOTO start
-:zone14
-CLS
+goto start
+:ZONE_14
+cls
 start ZONES/Zone14/ZONESRV.exe
-GOTO start
-:zone15
-CLS
+goto start
+:ZONE_15
+cls
 start ZONES/Zone15/ZONESRV.exe
-GOTO start
-:zone16
-CLS
+goto start
+:ZONE_16
+cls
 start ZONES/Zone16/ZONESRV.exe
-GOTO start
-:zone17
-CLS
+goto start
+:ZONE_17
+cls
 start ZONES/Zone17/ZONESRV.exe
-GOTO start
-:zone20
-CLS
+goto start
+:ZONE_20
+cls
 start ZONES/Zone20/ZONESRV.exe
-GOTO start
-:zone21
-CLS
+goto start
+:ZONE_21
+cls
 start ZONES/Zone21/ZONESRV.exe
-GOTO start
-:zone22
-CLS
+goto start
+:ZONE_22
+cls
 start ZONES/Zone22/ZONESRV.exe
-GOTO start
-:zone23
-CLS
+goto start
+:ZONE_23
+cls
 start ZONES/Zone23/ZONESRV.exe
-GOTO start
-:dbsrv
-CLS
+goto start
+:DBSRV
+cls
 start DBSRV/DBSRV.exe
-GOTO start
-:msgsrv
-CLS
+goto start
+:MSGSRV
+cls
 start MSGSRV/MSGSRV.exe
-GOTO start
-:chatsrv
-CLS
+goto start
+:CHATSRV
+cls
 start CHATSRV/CHATSRV.exe
-GOTO start
-:set
+goto start
+
+
+
+:: SET_IP_MENU SCREEN
+:SET_IP_MENU
 cls
-title tantra Tools - Tantra Server Configuration  - http://sami3744.blogspot.com
 echo.&echo.
-echo                                   tantra Tools
-echo                            Configuration Tantra Server
-echo                               radiantecf.laweb.es
+echo                Set IP
 echo.&echo.
-echo   ........................................................................
-echo   .     I = IP Configuration                                             .
-ECHO   .                                                                      .
-ECHO   .                                                                      .
-echo   .                              F = Return to Menu                      .
-echo   ........................................................................
-ECHO.
-ECHO.
+echo    .............................
+echo    .                           .
+echo    .   A = IP Configuration    .
+echo    .   B = Return to Menu      .
+echo    .                           .
+echo    .............................
+echo.
+echo.
 set /p l=           Please enter:
-if %l%==* goto error
-if %l%==i goto setip
-if %l%==I goto setip
-if %l%==n goto NoGuild
-if %l%==N goto NoGuild
-if %l%==f goto menu
-if %l%==F goto menu
-goto error
-:setip
+if %l%==* goto INVALID_INPUT
+if %l%==A goto IP_CONFIGURATION
+if %l%==B goto PRINCIPAL_MENU
+goto INVALID_INPUT
+
+
+
+:: GUILD_MENU SCREEN
+:::GUILD_MENU
+::cls
+::echo.&echo.
+::echo                                 tantra Tools
+::echo                                  open Guild
+::echo                                  SamTheGreaT
+::echo.&echo.
+::echo   ........................................................................
+::echo   .             Y = Open Clan and Rank      N = Close Clan and Rank      .
+::echo   .                                                                      .
+::echo   .                                                                      .
+::echo   .                           F = Return to Menu                            .
+::echo   ........................................................................
+::echo.
+::echo.
+::set /p l=           Please enter:
+::if %l%==* goto INVALID_INPUT
+::if %l%==y goto YesGuild
+::if %l%==Y goto YesGuild
+::if %l%==n goto NoGuild
+::if %l%==N goto NoGuild
+::if %l%==f goto PRINCIPAL_MENU
+::if %l%==F goto PRINCIPAL_MENU
+::goto INVALID_INPUT
+:: YES_GUILD SCREEN
+:::YesGuild
+::cls
+::subst G: C:\TantraServer\DBSRV\guild
+::subst K: C:\TantraServer\SQLDAEMON\Rank
+::subst R: C:\TantraServer\web
+::subst Q: C:\TantraServer\web
+::subst S: C:\TantraServer\web
+::subst H: C:\TantraServer\web
+::echo                           Start Guild and Rank Success
+::pause    
+::goto GUILD_MENU
+:::NoGuild
+::cls
+::subst G: /d
+::subst K: /d
+::subst R: /d
+::subst Q: /d
+::subst S: /d
+::subst H: /d
+::echo                           Close Guild and Rank Success 
+::pause    
+::goto GUILD_MENU
+
+
+
+:: ZONE_INFO_MENU SCREEN
+:ZONE_INFO_MENU
 cls
-title tantra Tools - IP Configuration  - http://sami3744.blogspot.com
 echo.&echo.
-echo                                tantra Tools
-echo                              Configuration IP
-echo                                SamTheGreat
+echo                     Zone Info 
 echo.&echo.
-echo   ........................................................................
-echo   .                                                                      .
-ECHO   .                   Y = Change IP        N = Erase IP                  .
-ECHO   .                                                                      .
-echo   .                           F = Return to Menu                         .
-echo   .                                                                      .                   
-echo   .                                                                      .
-echo   .                                                                      . 
-echo   ........................................................................
-ECHO.
-ECHO.
+echo    ..........................................
+echo    .                                        .
+echo    .  1 = Mandara                           .
+echo    .  2 = Shambala                          .
+echo    .  3 = Horseman Dungeon 1st Floor        .
+echo    .  4 = Horseman Dungeon 2nd Floor        .
+echo    .  5 = Shambala Dungeon 1st Floor        .
+echo    .  6 = Shambala Dungeon 2nd Floor        .
+echo    .  7 = Jina Village                      .
+echo    .  8 = Pamir Plains                      .
+echo    .  9 = Village of the outcast (Exilio)   .
+echo    .  10 = Kruma                            .
+echo    .  11 = Chaturanga                       .
+echo    .  12 = Entrance Hall of Emperor's Tomb  .
+echo    .  13 = Karya Low Level                  .
+echo    .  14 = Karya Middle Level               .
+echo    .  15 = Karya High Level                 .
+echo    .  16 = Nar Durga Gate                   .
+echo    .  17 = Biryu                            .
+echo    .  20 = Anaka Kruma                      .
+echo    .  21 = Mudha                            .
+echo    .  22 = Forge                            .
+echo    .                                        .
+echo    ..........................................
+echo.
+pause
+goto OPEN_SERVER
+
+
+
+:: IP_CONFIGURATION SCREEN
+:IP_CONFIGURATION
+cls
+echo.&echo.
+echo         IP Configuration
+echo.&echo.
+echo   ...........................
+echo   .                         .
+echo   .    A = Change IP        .
+echo   .    B = Erase IP         .
+echo   .    C = Return to Menu   .
+echo   .                         .
+echo   ...........................
+echo.
+echo.
 set /p l=           Please enter:
-if %l%==* goto error
-if %l%==y goto addip
-if %l%==Y goto addip
-if %l%==n goto delip
-if %l%==N goto delip
-if %l%==f goto menu
-if %l%==F goto menu
-goto error
-:addip
-ECHO   Example: 127.0.0.1
-ECHO.
-set /p a=         Please enter IP:
+if %l%==* goto INVALID_INPUT
+if %l%==A goto CHANGE_IP
+if %l%==B goto ERASE_IP
+if %l%==C goto PRINCIPAL_MENU
+goto INVALID_INPUT
+
+
+
+:: CHANGE_IP SCREEN
+:CHANGE_IP
+echo.&echo.
+echo Example: 127.0.0.1
+echo.&echo.
+set /p a=Please enter IP: 
 ::echo %a% 7514 >>ZONES/Zone1/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone2/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone3/itemserver.txt
@@ -1730,11 +1733,15 @@ echo $DBServer >>GMTOOL/Serverlist.txt
 echo %a%,TantraGM >>GMTOOL/Serverlist.txt
 echo $TSMonSvc >>GMTOOL/Serverlist.txt
 echo 0 %a%  >>DBSRV/Admin.txt
+echo IP %a% was set successfully
 echo.&echo.
-echo                           %a%Add success
-PAUSE 
-goto setip
-:delip
+pause 
+goto IP_CONFIGURATION
+
+
+
+:: ERASE_IP SCREEN
+:ERASE_IP
 @echo off 
 echo IP services is deleted, please wait ...
 del /f /s /q LocalIP.txt
@@ -1742,35 +1749,39 @@ del /f /s /q itemserver.txt
 del /f /s /q Serverlist.txt
 del /f /s /q Admin.txt
 echo                           Delete success
-PAUSE
-goto setip
-:exitexe
+pause
+goto IP_CONFIGURATION
+
+
+
+:: CLOSE_SERVER_MENU SCREEN
+:CLOSE_SERVER_MENU
 cls
-title tantra Tools - Close procedures http://sami3744.blogspot.com
 echo.&echo.
-echo                                 tantra Tools
-echo                               Close procedures  
-echo                                  SamTheGreat
+echo            Close Server
 echo.&echo.
-echo   ........................................................................
-echo   .      Y = Close all Servers                 N = Cancel                .
-echo   ........................................................................
-ECHO.
-ECHO.
+echo   ..............................
+echo   .    A = Close all Servers   .
+echo   .    B = Cancel              .
+echo   ..............................
+echo.
+echo.
 set /p l=           Please enter:
-if %l%==* goto error
-if %l%==y goto okexitexe
-if %l%==Y goto okexitexe
-if %l%==n goto menu
-if %l%==N goto menu
-goto error
-:okexitexe
+if %l%==* goto INVALID_INPUT
+if %l%==A goto CLOSE_ALL_SERVERS
+if %l%==B goto PRINCIPAL_MENU
+goto INVALID_INPUT
+
+
+
+:: CLOSE_ALL_SERVERS MENU
+:CLOSE_ALL_SERVERS
 taskkill /f /t /im ZONESRV.exe
 taskkill /f /t /im DBSRV.exe
 taskkill /f /t /im GMTool.exe
 taskkill /f /t /im MSGSRV.exe
 taskkill /f /t /im CHATSRV.exe
 taskkill /f /t /im ITEM_SERVER.exe
-echo                           Close success
-PAUSE
-goto menu
+echo    Close success
+pause
+goto PRINCIPAL_MENU
