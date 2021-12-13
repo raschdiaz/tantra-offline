@@ -24,11 +24,17 @@
 2. EDIT THE FILE 'Settings.ini' AND EDIT THE FOLLOWING LINES:
 
 [Correct]
-RwdPrana 	= 1000
-RwdGold		= 1000
-RwdBraman	= 1000
-RwdItem	 	= 1000
+RwdPrana 	= 7000
+RwdGold		= 1500
+RwdBraman	= 500
+RwdItem	 	= 3000
 RwdRateForNormalItem = 150
+
+# HOW TO UPDATE THE CLIENT RESOURCE FILES
+1. Open and edit the "ClientRes.xml" file
+2. Use the "XML Converter.exe" tool to transform the "ClientRes.xml" file to "ClientRes.txl"
+3. Place the "ClientRes.txl" file in the "Tantra Client/system" folder.
+4. Open the Tantra Client (HTLauncher.exe) and verify the changes.
 
 <!--
 AL AGREGAR EL ARCHIVO 'TOOLS/itemserver.txt' en una carpeta de una zona ('ZONES/Zone#/Data') HABILITARA EL ITEM MALL (SE REQUIERE CONFIGURACION DE UNA BASE DE DATOS SQL SERVER 2002)

@@ -347,6 +347,7 @@ set /p a=Please enter IP:
 ::echo %a% 7514 >>ZONES/Zone15/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone16/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone17/itemserver.txt
+::echo %a% 7514 >>ZONES/Zone18/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone20/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone21/itemserver.txt
 ::echo %a% 7514 >>ZONES/Zone22/itemserver.txt
@@ -368,10 +369,8 @@ echo %a% 3014 >>ZONES/Zone14/LocalIP.txt
 echo %a% 3015 >>ZONES/Zone15/LocalIP.txt
 echo %a% 3016 >>ZONES/Zone16/LocalIP.txt
 echo %a% 3017 >>ZONES/Zone17/LocalIP.txt
+echo %a% 3018 >>ZONES/Zone18/LocalIP.txt
 echo %a% 3020 >>ZONES/Zone20/LocalIP.txt
-echo %a% 3015 >>ZONES/Zone15/LocalIP.txt
-echo %a% 3016 >>ZONES/Zone16/LocalIP.txt
-echo %a% 3017 >>ZONES/Zone17/LocalIP.txt
 echo %a% 3021 >>ZONES/Zone21/LocalIP.txt
 echo %a% 3022 >>ZONES/Zone22/LocalIP.txt
 ::echo %a% 3023 >>ZONES/Zone23/LocalIP.txt
@@ -1297,6 +1296,60 @@ echo 0  50 %a% 3050 >>ZONES/Zone17/Serverlist.txt
 echo 0  51 %a% 5001 >>ZONES/Zone17/Serverlist.txt
 echo 0  52 %a% 5052 >>ZONES/Zone17/Serverlist.txt
 echo 0  53 %a% 5053 >>ZONES/Zone17/Serverlist.txt
+echo 0  0 %a% 1000 >>ZONES/Zone18/Serverlist.txt
+echo 0  1 %a% 3001 >>ZONES/Zone18/Serverlist.txt
+echo 0  2 %a% 3002 >>ZONES/Zone18/Serverlist.txt
+echo 0  3 %a% 3003 >>ZONES/Zone18/Serverlist.txt
+echo 0  4 %a% 3004 >>ZONES/Zone18/Serverlist.txt
+echo 0  5 %a% 3005 >>ZONES/Zone18/Serverlist.txt
+echo 0  6 %a% 3006 >>ZONES/Zone18/Serverlist.txt
+echo 0  7 %a% 3007 >>ZONES/Zone18/Serverlist.txt
+echo 0  8 %a% 3008 >>ZONES/Zone18/Serverlist.txt
+echo 0  9 %a% 3009 >>ZONES/Zone18/Serverlist.txt
+echo 0  10 %a% 3010 >>ZONES/Zone18/Serverlist.txt
+echo 0  11 %a% 3011 >>ZONES/Zone18/Serverlist.txt
+echo 0  12 %a% 3012 >>ZONES/Zone18/Serverlist.txt
+echo 0  13 %a% 3013 >>ZONES/Zone18/Serverlist.txt
+echo 0  14 %a% 3014 >>ZONES/Zone18/Serverlist.txt
+echo 0  15 %a% 3015 >>ZONES/Zone18/Serverlist.txt
+echo 0  16 %a% 3016 >>ZONES/Zone18/Serverlist.txt
+echo 0  17 %a% 3017 >>ZONES/Zone18/Serverlist.txt
+echo 0  18 %a% 3018 >>ZONES/Zone18/Serverlist.txt
+echo 0  19 %a% 3019 >>ZONES/Zone18/Serverlist.txt
+echo 0  20 %a% 3020 >>ZONES/Zone18/Serverlist.txt
+echo 0  21 %a% 3021 >>ZONES/Zone18/Serverlist.txt
+echo 0  22 %a% 3022 >>ZONES/Zone18/Serverlist.txt
+echo 0  23 %a% 3023 >>ZONES/Zone18/Serverlist.txt
+echo 0  24 %a% 3024 >>ZONES/Zone18/Serverlist.txt
+echo 0  25 %a% 3025 >>ZONES/Zone18/Serverlist.txt
+echo 0  26 %a% 3026 >>ZONES/Zone18/Serverlist.txt
+echo 0  27 %a% 3027 >>ZONES/Zone18/Serverlist.txt
+echo 0  28 %a% 3028 >>ZONES/Zone18/Serverlist.txt
+echo 0  29 %a% 3029 >>ZONES/Zone18/Serverlist.txt
+echo 0  30 %a% 3030 >>ZONES/Zone18/Serverlist.txt
+echo 0  31 %a% 3031 >>ZONES/Zone18/Serverlist.txt
+echo 0  32 %a% 3032 >>ZONES/Zone18/Serverlist.txt
+echo 0  33 %a% 3033 >>ZONES/Zone18/Serverlist.txt
+echo 0  34 %a% 3034 >>ZONES/Zone18/Serverlist.txt
+echo 0  35 %a% 3035 >>ZONES/Zone18/Serverlist.txt
+echo 0  36 %a% 3036 >>ZONES/Zone18/Serverlist.txt
+echo 0  37 %a% 3037 >>ZONES/Zone18/Serverlist.txt
+echo 0  38 %a% 3038 >>ZONES/Zone18/Serverlist.txt
+echo 0  39 %a% 3039 >>ZONES/Zone18/Serverlist.txt
+echo 0  40 %a% 3040 >>ZONES/Zone18/Serverlist.txt
+echo 0  41 %a% 3041 >>ZONES/Zone18/Serverlist.txt
+echo 0  42 %a% 3042 >>ZONES/Zone18/Serverlist.txt
+echo 0  43 %a% 3043 >>ZONES/Zone18/Serverlist.txt
+echo 0  44 %a% 3044 >>ZONES/Zone18/Serverlist.txt
+echo 0  45 %a% 3045 >>ZONES/Zone18/Serverlist.txt
+echo 0  46 %a% 3046 >>ZONES/Zone18/Serverlist.txt
+echo 0  47 %a% 3047 >>ZONES/Zone18/Serverlist.txt
+echo 0  48 %a% 3048 >>ZONES/Zone18/Serverlist.txt
+echo 0  49 %a% 3049 >>ZONES/Zone18/Serverlist.txt
+echo 0  50 %a% 3050 >>ZONES/Zone18/Serverlist.txt
+echo 0  51 %a% 5001 >>ZONES/Zone18/Serverlist.txt
+echo 0  52 %a% 5052 >>ZONES/Zone18/Serverlist.txt
+echo 0  53 %a% 5053 >>ZONES/Zone18/Serverlist.txt
 echo 0  0 %a% 1000 >>ZONES/Zone20/Serverlist.txt
 echo 0  1 %a% 3001 >>ZONES/Zone20/Serverlist.txt
 echo 0  2 %a% 3002 >>ZONES/Zone20/Serverlist.txt
@@ -1729,6 +1782,61 @@ echo 0  50 %a% 3050 >>MSGSRV/Serverlist.txt
 echo 0  51 %a% 5001 >>MSGSRV/Serverlist.txt
 echo 0  52 %a% 5052 >>MSGSRV/Serverlist.txt
 echo 0  53 %a% 5053 >>MSGSRV/Serverlist.txt
+echo 0  0  1 >>../CLIENT/Serverlist.txt
+echo 0  0 %a% 1000 >>../CLIENT/Serverlist.txt
+echo 0  1 %a% 3001 >>../CLIENT/Serverlist.txt
+echo 0  2 %a% 3002 >>../CLIENT/Serverlist.txt
+echo 0  3 %a% 3003 >>../CLIENT/Serverlist.txt
+echo 0  4 %a% 3004 >>../CLIENT/Serverlist.txt
+echo 0  5 %a% 3005 >>../CLIENT/Serverlist.txt
+echo 0  6 %a% 3006 >>../CLIENT/Serverlist.txt
+echo 0  7 %a% 3007 >>../CLIENT/Serverlist.txt
+echo 0  8 %a% 3008 >>../CLIENT/Serverlist.txt
+echo 0  9 %a% 3009 >>../CLIENT/Serverlist.txt
+echo 0  10 %a% 3010 >>../CLIENT/Serverlist.txt
+echo 0  11 %a% 3011 >>../CLIENT/Serverlist.txt
+echo 0  12 %a% 3012 >>../CLIENT/Serverlist.txt
+echo 0  13 %a% 3013 >>../CLIENT/Serverlist.txt
+echo 0  14 %a% 3014 >>../CLIENT/Serverlist.txt
+echo 0  15 %a% 3015 >>../CLIENT/Serverlist.txt
+echo 0  16 %a% 3016 >>../CLIENT/Serverlist.txt
+echo 0  17 %a% 3017 >>../CLIENT/Serverlist.txt
+echo 0  18 %a% 3018 >>../CLIENT/Serverlist.txt
+echo 0  19 %a% 3019 >>../CLIENT/Serverlist.txt
+echo 0  20 %a% 3020 >>../CLIENT/Serverlist.txt
+echo 0  21 %a% 3021 >>../CLIENT/Serverlist.txt
+echo 0  22 %a% 3022 >>../CLIENT/Serverlist.txt
+echo 0  23 %a% 3023 >>../CLIENT/Serverlist.txt
+echo 0  24 %a% 3024 >>../CLIENT/Serverlist.txt
+echo 0  25 %a% 3025 >>../CLIENT/Serverlist.txt
+echo 0  26 %a% 3026 >>../CLIENT/Serverlist.txt
+echo 0  27 %a% 3027 >>../CLIENT/Serverlist.txt
+echo 0  28 %a% 3028 >>../CLIENT/Serverlist.txt
+echo 0  29 %a% 3029 >>../CLIENT/Serverlist.txt
+echo 0  30 %a% 3030 >>../CLIENT/Serverlist.txt
+echo 0  31 %a% 3031 >>../CLIENT/Serverlist.txt
+echo 0  32 %a% 3032 >>../CLIENT/Serverlist.txt
+echo 0  33 %a% 3033 >>../CLIENT/Serverlist.txt
+echo 0  34 %a% 3034 >>../CLIENT/Serverlist.txt
+echo 0  35 %a% 3035 >>../CLIENT/Serverlist.txt
+echo 0  36 %a% 3036 >>../CLIENT/Serverlist.txt
+echo 0  37 %a% 3037 >>../CLIENT/Serverlist.txt
+echo 0  38 %a% 3038 >>../CLIENT/Serverlist.txt
+echo 0  39 %a% 3039 >>../CLIENT/Serverlist.txt
+echo 0  40 %a% 3040 >>../CLIENT/Serverlist.txt
+echo 0  41 %a% 3041 >>../CLIENT/Serverlist.txt
+echo 0  42 %a% 3042 >>../CLIENT/Serverlist.txt
+echo 0  43 %a% 3043 >>../CLIENT/Serverlist.txt
+echo 0  44 %a% 3044 >>../CLIENT/Serverlist.txt
+echo 0  45 %a% 3045 >>../CLIENT/Serverlist.txt
+echo 0  46 %a% 3046 >>../CLIENT/Serverlist.txt
+echo 0  47 %a% 3047 >>../CLIENT/Serverlist.txt
+echo 0  48 %a% 3048 >>../CLIENT/Serverlist.txt
+echo 0  49 %a% 3049 >>../CLIENT/Serverlist.txt
+echo 0  50 %a% 3050 >>../CLIENT/Serverlist.txt
+echo 0  51 %a% 5001 >>../CLIENT/Serverlist.txt
+echo 0  52 %a% 5052 >>../CLIENT/Serverlist.txt
+echo 0  53 %a% 5053 >>../CLIENT/Serverlist.txt
 echo $DBServer >>GMTOOL/Serverlist.txt
 echo %a%,TantraGM >>GMTOOL/Serverlist.txt
 echo $TSMonSvc >>GMTOOL/Serverlist.txt
@@ -1743,12 +1851,12 @@ goto IP_CONFIGURATION
 :: ERASE_IP SCREEN
 :ERASE_IP
 @echo off 
-echo IP services is deleted, please wait ...
+echo IP services is being deleted, please wait...
 del /f /s /q LocalIP.txt
 del /f /s /q itemserver.txt
 del /f /s /q Serverlist.txt
 del /f /s /q Admin.txt
-echo                           Delete success
+echo Delete success
 pause
 goto IP_CONFIGURATION
 
