@@ -34,7 +34,13 @@ RwdRateForNormalItem = 150
 1. Open and edit the "ClientRes.xml" file
 2. Use the "XML Converter.exe" tool to transform the "ClientRes.xml" file to "ClientRes.txl"
 3. Place the "ClientRes.txl" file in the "Tantra Client/system" folder.
-4. Open the Tantra Client (HTLauncher.exe) and verify the changes.
+4. Open the "Tantra Client/HTLauncher.exe" and verify the changes.
+
+# HOW TO UPDATE THE TANTRA PARAM FILE
+1. Open and edit the "TantraParam.xml" file
+2. Use the "XML Converter.exe" tool to transform the "TantraParam.xml" file to "TantraParam.tpa" (for Zone and Client)
+3. Place the "TantraParam.tpa" file in the "Tantra Client/system" and "Zone#" folders.
+4. Open the "Tantra Client/HTLauncher.exe" and verify the changes.
 
 <!--
 AL AGREGAR EL ARCHIVO 'TOOLS/itemserver.txt' en una carpeta de una zona ('ZONES/Zone#/Data') HABILITARA EL ITEM MALL (SE REQUIERE CONFIGURACION DE UNA BASE DE DATOS SQL SERVER 2002)
