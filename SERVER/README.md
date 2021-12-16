@@ -32,13 +32,13 @@ RwdRateForNormalItem = 150
 
 # HOW TO UPDATE THE CLIENT RESOURCE FILES
 1. Open and edit the "ClientRes.xml" file
-2. Use the "XML Converter.exe" tool to transform the "ClientRes.xml" file to "ClientRes.txl"
+2. Use the "XML Converter.exe" tool to transform the "ClientRes.xml" file to "ClientRes.txl" (don´t forget to select the desired language to use)
 3. Place the "ClientRes.txl" file in the "Tantra Client/system" folder.
 4. Open the "Tantra Client/HTLauncher.exe" and verify the changes.
 
 # HOW TO UPDATE THE TANTRA PARAM FILE
 1. Open and edit the "TantraParam.xml" file
-2. Use the "XML Converter.exe" tool to transform the "TantraParam.xml" file to "TantraParam.tpa" (for Zone and Client)
+2. Use the "XML Converter.exe" tool to transform the "TantraParam.xml" file to "TantraParam.tpa" (for Zone and Client) (don´t forget to select the desired language to use)
 3. Place the "TantraParam.tpa" file in the "Tantra Client/system" and "Zone#" folders.
 4. Open the "Tantra Client/HTLauncher.exe" and verify the changes.
 
