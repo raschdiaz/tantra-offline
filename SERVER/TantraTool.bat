@@ -1856,6 +1856,7 @@ del /f /s /q LocalIP.txt
 del /f /s /q itemserver.txt
 del /f /s /q Serverlist.txt
 del /f /s /q Admin.txt
+del /f /s /q ../CLIENT/Serverlist.txt
 echo Delete success
 pause
 goto IP_CONFIGURATION
