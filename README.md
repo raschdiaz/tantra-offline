@@ -32,6 +32,8 @@ RwdBraman	= 100
 RwdItem	 	= 100
 RwdRateForNormalItem = 100
 
+General Map Exp Rate = x30
+General Rupiah Rate = x3
 
 # HOW TO UPDATE THE CLIENT RESOURCE FILES
 1. Open and edit the "ClientRes.xml" file

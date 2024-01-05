@@ -1,5 +1,73 @@
 CHANGELOG
 
+02-01-2024
+- Server
+    - Mandara
+        - Increased experience rate to x30
+        - Increased ruphia rate to x5
+    - Shambala
+        - Increased experience rate to x30
+        - Increased ruphia rate to x5
+    - Shambala Dungueon
+        - Increased experience rate to x30
+        - Increased ruphia rate to x5
+
+01-01-2024
+- Server
+    - Set Mandara teleport option on "Entrance to Shambala" portal
+    - Mandara
+        - Increased experience to x25
+    - Shambala
+        - Increased experience to x25
+    - Shambala Dungueon
+        - Increased experience to x25
+
+30-12-2023
+- Server
+    - Mandara
+        - Increased experience to x20
+    - Shambala
+        - Increased experience to x20
+    - Shambala Dungueon
+        - Increased experience to x20
+
+29-12-2023
+- Server
+    - Mandara
+        - Increased experience to x13
+    - Shambala
+        - Increased experience to x13
+- User Interface
+    - Add lvl 34 armors icons.
+    - Add lvl 40 armors icons.
+    - Add lvl 46 armors icons.
+    - Add lvl 52 armors icons.
+    - Add "lvl 2" jewels icons.
+
+28-12-2023
+- User Interface
+    - Add lvl 34 weapons icons.
+    - Add lvl 40 weapons icons.
+    - Add lvl 46 weapons icons.
+    - Add lvl 52 weapons icons.
+    - Add lvl 34-52 shields icons.
+
+27-12-2023
+- Mandara
+    - Vartan
+        - Added lvl 1 - 34 weapons and shields.
+    - Goods Salesman Ridi
+        - Add NPC, Added lvl 1 - 34 weapons and shields.
+    - Ashuri
+        - Add lvl 38 - 52 items in store.
+    - Karan
+        - Update items in store.
+- Shambala
+    - Vibvan
+        - Add lvl 38 - 52 weapons and shields
+    - Nara
+        - Add lvl 2 jewels in store.
+
 26-12-2021
 - Mandara
     - Vartan
