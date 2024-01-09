@@ -1,5 +1,54 @@
 CHANGELOG
 
+08-01-2024
+- Server
+    - Jina
+        - Weapons Salesman Ouyez
+            - Add lvl 58, 62 and 66 weapons
+        - Armor Salesman Wangddaopo
+            - Add lvl 58 and lvl 64 sets
+        - Good Salesman Potava
+            - Add lvl 68 sets
+        - Goods Salesman Rui Shan
+            - Add lvl 3 jewels and tipical items
+
+07-01-2024
+- Server
+    - Mandara
+        - Increased experience rate to x100
+        - Increased ruphia rate to x6
+    - Shambala
+        - Increased experience rate to x100
+        - Increased ruphia rate to x6
+    - Shambala Dungueon
+        - Increased experience rate to x100
+        - Increased ruphia rate to x6
+
+06-01-2024
+- Server
+    - Mandara
+        - Increased experience rate to x50
+        - Increased ruphia rate to x5
+    - Shambala
+        - Increased experience rate to x50
+        - Increased ruphia rate to x5
+    - Shambala Dungueon
+        - Increased experience rate to x50
+        - Increased ruphia rate to x5
+
+
+04-01-2024
+- Server
+    - Mandara
+        - Increased experience rate to x35
+        - Increased ruphia rate to x6
+    - Shambala
+        - Increased experience rate to x35
+        - Increased ruphia rate to x6
+    - Shambala Dungueon
+        - Increased experience rate to x35
+        - Increased ruphia rate to x6
+
 02-01-2024
 - Server
     - Mandara
