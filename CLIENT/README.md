@@ -1,5 +1,29 @@
 CHANGELOG
 
+12-01-2024
+- Testing Missions
+- Client
+    - Update HTStartup.cfg
+        - [CAMERA] fov 44.00 -> 50.00
+    - Add resource icons
+- Server
+    - Jina
+        - Weapons Salesman Ouyez
+            - Sort weapons
+            - Add lvl 68 weapons
+
+11-01-2024
+- Testing Missions
+- Client
+    - Add resource icons
+- Server
+    - Add lvl in mob names in Pamir Area map
+
+09-01-2024
+- Testing Missions
+- Client
+    - Add resource icons
+
 08-01-2024
 - Server
     - Jina
