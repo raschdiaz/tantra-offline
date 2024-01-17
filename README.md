@@ -71,6 +71,15 @@ General Rupiah Rate = x3
 # IF YOU GET A "SORRY CONNECTION" MESSAGE WHEN TRYING TO BUY AN ITEM TO AN NPC
 1. Follow the steps of the "HOW TO UPDATE THE TANTRA PARAM FILE" section.
 
+# HOW TO UPDATE ICONS FROM ITEMS ON THE CLIENT
+1. Search the item in the "ClientRes_2.xml" file in the "Item" sheet.
+2. Copy the "Inventory_Tex_ID" value and search it in the "MainUI" sheet.
+3. Search the row tiwith the value and search the "Name" value in the "CLIENT\resource\UI" folder
+4. Use the "HPK.To.Files.exe" tool to convert the .hpk file and generate the folder with the .bmp files and .csv file.
+5. Copy the found file in your client, in the generate folder.
+6. Update the .csv file adding the file name with the size and total size of the folder.
+7. Use the "HPK.To.Files.exe" tool to convert the .csv and .bmp files into the .hpk file.
+
 <!--
 AL AGREGAR EL ARCHIVO 'TOOLS/itemserver.txt' en una carpeta de una zona ('ZONES/Zone#/Data') HABILITARA EL ITEM MALL (SE REQUIERE CONFIGURACION DE UNA BASE DE DATOS SQL SERVER 2002)
 -->
