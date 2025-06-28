@@ -83,3 +83,8 @@ General Rupiah Rate = x3
 <!--
 AL AGREGAR EL ARCHIVO 'TOOLS/itemserver.txt' en una carpeta de una zona ('ZONES/Zone#/Data') HABILITARA EL ITEM MALL (SE REQUIERE CONFIGURACION DE UNA BASE DE DATOS SQL SERVER 2002)
 -->
+
+# INCREASE FPS ON CLIENT
+1. Open the "system\HTSpec.cfg" file and edit it.
+2. Set the "ModelCount" to zero (0).
+3. Save the changes.
